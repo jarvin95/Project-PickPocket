@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+
+	</div>
+	<script>
+		const input = [
+			{
+				'macAddress': '01:12:23:34:45:56',
+				'signalStrength': '-32'
+			},
+			{
+				'macAddress': 'A2:32:D3:3F:15:55',
+				'signalStrength': '-32'
+			},
+			{
+				'macAddress': 'D2:AE:A3:3F:4C:33',
+				'signalStrength': '-32'
+			}
+		]
+		const tempWidth = 250, tempHeight = 250;
+
+		d3.xml("localhost:8000/green_blob.svg").mimeType("image/svg+xml").get(function (error, xml) {
+			document.body.appendChild(xml.documentElement);
+		});
+
+
+		let mainDiv = d3.select("#mainDiv");
+		for (let i = 0; i < input.length; i++) {
+
+			mainDiv.append("svg").attr("width", tempWidth).attr("height", tempHeight);
+		}
+	</script>
+</body>
+
+</html>

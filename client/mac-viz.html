@@ -1,0 +1,86 @@
+<html>
+<head>
+    <title>Project Pickpocket --- MAC Visualization</title>
+    <script src="d3.js"></script>
+</head>
+<body>
+<header class="row">
+    <div class="col">
+        <h1>Project Pickpocket</h1>
+        <h2>MAC Address Visualization</h2>
+    </div>
+</header>
+
+<main class="center">
+    <svg id="viz"></svg>
+</main>
+
+<script src="mac.js"></script>
+<script src="viz.js"></script>
+</body>
+</html>
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        align-items: center;
+        background-color: #F9F7F7;
+        font-family: 'Roboto Mono for Powerline';
+        justify-content: center;
+    }
+
+    div, header, main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        background-color: #006FFF;
+        color: white;
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-family: Phosphate;
+        font-size: 48px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-family: "Apple Chancery";
+        font-size: 36px;
+        margin: 5px;
+    }
+
+    h3 {
+        color: #417505;
+        font-size: 48px;
+        margin: 5px;
+    }
+
+    h4 {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .col {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+</style>

@@ -1,0 +1,110 @@
+<html>
+<head>
+    <title>Project Pickpocket --- Magic Demo!</title>
+</head>
+<body>
+<header class="row">
+    <div class="col">
+        <h1>Project Pickpocket</h1>
+        <h2>- Magic Demo -</h2>
+    </div>
+</header>
+<div class="col">
+    <div class="row people">
+        <div class="col jarvin person">
+            <img src="img/jarvin.png" />
+            <h4>Jarvin Ong</h4>
+            <h3>$<span class="amount">100.00</span></h3>
+        </div>
+        <div class="col yustynn person">
+            <img src="img/yustynn.png" />
+            <h4>Yustynn Panicker</h4>
+            <h3>$<span class="amount">100.00</span></h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <p>Price of Chips: <span style="color: #FF412D; font-weight: bold;">$1 per Can</span></p>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
+
+<style>
+    html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0
+    }
+
+    body {
+        align-items: center;
+        background-color: #F9F7F7;
+        font-family: 'Roboto Mono for Powerline';
+        justify-content: center;
+    }
+
+    div, header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header {
+        background-color: #006FFF;
+        color: white;
+        padding: 30px;
+        margin-bottom: 100px;
+    }
+
+    h1 {
+        font-family: Phosphate;
+        font-size: 48px;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+
+    h2 {
+        font-family: "Apple Chancery";
+        font-size: 36px;
+        margin: 5px;
+    }
+
+    h3 {
+        color: #417505;
+        font-size: 48px;
+        margin: 5px;
+    }
+
+    h4 {
+        font-size: 24px;
+        text-transform: uppercase;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .col {
+        flex-direction: column;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+    .person {
+        background-color: white;
+        border-radius: 10px;
+        border-bottom: 15px solid #006FFF;
+        margin: 30px;
+        padding: 20px 0;
+        width: 450px;
+    }
+
+    .inactive {
+        opacity: 0.4;
+    }
+
+</style>
